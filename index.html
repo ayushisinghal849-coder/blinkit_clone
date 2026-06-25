@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkit Clone</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+blinkit
+</div>
+
+<div class="location">
+<h4>Delivery in 10 mins</h4>
+<p>Home, India</p>
+</div>
+
+<div class="search">
+<i class="fa fa-search"></i>
+<input
+type="text"
+id="searchInput"
+placeholder="Search products">
+</div>
+
+<button id="cartBtn">
+🛒 Cart (<span id="count">0</span>)
+</button>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+Groceries delivered in 10 minutes ⚡
+</h1>
+
+<p>
+Fresh fruits, vegetables, dairy products and more.
+</p>
+
+<button>
+Shop Now
+</button>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg"
+alt="groceries">
+
+</div>
+
+</section>
+
+<section class="categories">
+
+<h2>Shop By Category</h2>
+
+<div class="category-grid">
+
+<div class="category">
+<img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg">
+<p>Fruits</p>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg">
+<p>Vegetables</p>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg">
+<p>Dairy</p>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg">
+<p>Bakery</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="products">
+
+<h2>Best Sellers</h2>
+
+<div id="productGrid"
+class="product-grid">
+
+</div>
+
+</section>
+
+<div id="cartSidebar">
+
+<div class="cart-header">
+
+<h2>Your Cart</h2>
+
+<button id="closeCart">
+✖
+</button>
+
+</div>
+
+<div id="cartItems">
+
+</div>
+
+<div class="cart-footer">
+
+<h3>
+Total ₹<span id="total">0</span>
+</h3>
+
+</div>
+
+</div>
+
+<div id="overlay"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
